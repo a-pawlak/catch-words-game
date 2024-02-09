@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" defer src="./src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="levels-menu">
+          <button class="btn-level easy">EASY</button>
+          <button class="btn-level normal">NORMAL</button>
+          <button class="btn-level hard">HARD</button>
+        </div>
+        <div class="scores">
+          <div class="level-guessed">
+            CATCHED: <br /><span class="catched">0</span>
+          </div>
+          <div class="level-score">
+            SCORE: <br /><span class="score">0</span>
+          </div>
+        </div>
+        <div class="game-info">
+          <h2 class="game-info-header">Catch the word!</h2>
+          <div class="results">
+            <div class="counter"></div>
+            <div class="lives"></div>
+          </div>
+          <div class="guessing">
+            <div class="word-guess"></div>
+            <div class="word-ans"></div>
+          </div>
+        </div>
+        <div class="game-board">
+          <div class="success-info hide-info">Got it!</div>
+          <div class="loose-info hide-info">To slow, to catch...</div>
+        </div>
+      </div>
+    </div>
+    <div class="starter-screen">
+      <span class="starter-screen-info">Catch the words!</span>
+      <ion-icon
+        class="game-controller-outline"
+        name="game-controller-outline"
+      ></ion-icon>
+      <span class="starter-screen-info"
+        >Start the game >>> <br />choose difficulty level.</span
+      >
+    </div>
+  </body>
+</html>
